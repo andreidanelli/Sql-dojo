@@ -131,4 +131,5 @@ WHERE e.salario =
     (SELECT MIN(em.salario)
      FROM empregados em
      WHERE e.dep_id = em.dep_id
-     GROUP BY em.dep_id);
+     GROUP BY em.dep_id)
+ORDER BY e.nome;

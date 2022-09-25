@@ -82,3 +82,11 @@
 --  Ana     |   12200 |      4 | 12200.0000000000000000
 
 N - Faça um questão livre e responda com join e subconsulta; 
+--> Listar o nome do funcionario e departamento com menor salario dentro de cada departamento.
+
+--  empregado | departamento | salario
+--  ----------+--------------+---------
+--  Ana       | Marketing    | 12200
+--  Guilherme | TI           | 5000
+--  Joao      | Vendas       | 6000
+--  Pedro     |	RH           | 7500
