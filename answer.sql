@@ -121,5 +121,14 @@ ORDER BY e.dep_id,
          e.nome
 
 --Question N
-
-
+--Listar o nome do funcionario e departamento com menor salario dentro de cada departamento.
+SELECT e.nome AS empregado,
+	   d.nome AS departamento,	
+       e.salario AS salario
+FROM empregados e
+JOIN departamentos d on e.dep_id = d.dep_id
+WHERE e.salario =
+    (SELECT MIN(em.salario)
+     FROM empregados em
+     WHERE e.dep_id = em.dep_id
+     GROUP BY em.dep_id);
